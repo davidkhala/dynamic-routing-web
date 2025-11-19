@@ -2,12 +2,12 @@
 name = "0" # TODO project.name is required
 version = "0"
 dependencies = [
-
+    "fastapi", "uvicorn"
 ]
 
 [dependency-groups]
 dev = [
-    "pytest"
+    "pytest",
 ]
 
 [tool.hatch.build.targets.wheel]
