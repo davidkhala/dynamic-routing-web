@@ -1,0 +1,20 @@
+[project]
+name = "0" # TODO project.name is required
+version = "0"
+dependencies = [
+
+]
+
+[dependency-groups]
+dev = [
+    "pytest"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"] # TODO Add local py package here. But the list cannot be empty
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
