@@ -1,5 +1,5 @@
 [project]
-name = "0" # TODO project.name is required
+name = "dynamic-routing-web"
 version = "0"
 dependencies = [
     "fastapi", "uvicorn"
@@ -11,7 +11,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"] # TODO Add local py package here. But the list cannot be empty
+packages = ["src"]
 
 [build-system]
 requires = ["hatchling"]
