@@ -10,6 +10,11 @@ dynamic_pages = {}
 class PageContent(BaseModel):
     content: str
 
+@app.put("/hook")
+def notify(_json: PageContent):
+    
+    print(_json.content)
+    return {"message": "received"}
 
 @app.post("/{page_name}")
 def create_page(page_name: str,
